@@ -2,8 +2,16 @@
 #include <iostream>
 using namespace std;
 
+
+// constants - no hardcoded literals
+const int ZERO_VAL = 0;
+const int RED_VAL = 255;
+const int GREEN_VAL = 255;
+const int BLUE_VAL = 255;
+const int MID_VAL = 128;
+
 // default constructor
-Color() {
+Color::Color() {
     r = ZERO_VAL;
     g = ZERO_VAL;
     b = ZERO_VAL;
