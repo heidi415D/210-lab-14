@@ -2,9 +2,18 @@
 using namespace std;
 
 // starting w struct, will change to class
-struct Color {
+class Color {
+    private:
     int r, g, b;
     
+    public:
+    Color() { r = 0; g = 0; b = 0; } 
+
+    Color(int r, int g, int b){
+        r = r; // using same parameter names here
+        g = g;
+        b = b;
+    }
     void setRed(int value) { r = value }
     void setGreen(int value) { g = value; }
     void setBlue(int value) { b = value; }
@@ -24,7 +33,7 @@ int main() {
     c2.setRed(0);
     c2.setGreen(255);
     c2.setBlue(0);
-    
+
     c1.print();
     c2.print();
     return 0;
