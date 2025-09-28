@@ -2,19 +2,11 @@
 #include <iostream>
 using namespace std;
 
-
-// constants - no hardcoded literals
-const int ZERO_VAL = 0;
-const int RED_VAL = 255;
-const int GREEN_VAL = 255;
-const int BLUE_VAL = 255;
-const int MID_VAL = 128;
-
 // default constructor
 Color::Color() {
-    r = ZERO_VAL;
-    g = ZERO_VAL;
-    b = ZERO_VAL;
+    r = 0;
+    g = 0;
+    b = 0;
 }
  
 // constructor with parameters
@@ -24,7 +16,7 @@ Color::Color(int rr, int gg, int bb){
     b = bb;
     }
 
-void Color::setRed(int value) { r = value }
+void Color::setRed(int value) { r = value; }
 void Color::setGreen(int value) { g = value; }
 void Color::setBlue(int value) { b = value; }
     
